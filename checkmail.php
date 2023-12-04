@@ -39,23 +39,27 @@ foreach ($emails_jarr as $item) {
 
 ?>
 
-<div> Current user email addressess:
+<div>
 
     <?php
-    $emailList = '<ul>';
-    foreach ($emails as $email) {
-        $emailList .= '<li>' . $email . '</li>';
-    }
-    $emailList .= '</ul>';
 
-    echo $emailList;
+    $allowed_email = array('nyambayar2014@gmail.com', 'ptulgaa@num.edu.mn');
+
+    foreach ($emails as $email) {
+        if (in_array($email, $allowed_email)) {
+            echo "Welcome, $email! This is the restricted page.";
+            $k = 1;
+        }
+    }
+
+    if ($k != 1) {
+        echo "Access denied.";
+    }
+
+
     ?>
 
 
     <!-- <?php print_r(implode(',', $emails)) ?></div> -->
 
     <!-- <pre><?php print_r($result) ?></pre> -->
-
-    <p>
-    <a href="localhost:3000/lab11/checkmail.php">Go to info page</a>
-    </p>

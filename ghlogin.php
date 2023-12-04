@@ -1,8 +1,8 @@
 <?php
 // Get the temporary GitHub code from the request query parameters
 
-$CLIENT_ID = '';
-$CLIENT_SECRET = '';
+$CLIENT_ID = 'eaecf4f015dba3b16844';
+$CLIENT_SECRET = '6e15f0364cb04b3ed5ac249a17d00b2a436797a4';
 
 $sessionCode = $_GET['code'];
 

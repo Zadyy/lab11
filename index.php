@@ -13,7 +13,7 @@
     </p>
     <p>
         <?php
-        $client_id = '';
+        $client_id = 'eaecf4f015dba3b16844';
         ?>
         We're going to now talk to the GitHub API. Ready?
         <a href="https://github.com/login/oauth/authorize?scope=user:email&client_id=<?php echo $client_id; ?>">Click here</a> to begin!
